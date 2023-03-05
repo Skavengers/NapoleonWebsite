@@ -59,7 +59,6 @@ footer{
 	background-color: #ffffff;
 }
 
-/*responsive*/
 @media(max-width: 767px){
   .f_col{
     width: 50%;
@@ -110,7 +109,7 @@ p {
     font-size: 22px;
     font-family: 'Merriweather', serif;
     text-align: justify;
-    margin: 10px 30px 20px 20px;
+    margin: 10px 50px 20px 40px;
 }
 
 a { 
