@@ -1,0 +1,6 @@
+Les fichiers "napoléonbio3.html", "napoléonbio3_app.js" et "Napoléon2.css" sont les fichiers commentés.
+
+Le site a été créé par François Chevalier et Mathis Ferreira Dos Santos.
+Le menu, la page sur Napoléon 3 et la page sur les crédits a été essentiellement codé par François Chevalier. Quand à moi je me suis occupé des pages sur Napoléon I et II. Le "header" a été fait par moi et François s'est occupé du "footer".
+
+Les images sont dans le dossier "assets"

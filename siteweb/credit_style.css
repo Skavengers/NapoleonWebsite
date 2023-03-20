@@ -1,0 +1,485 @@
+footer {
+    background-color: #1f1e1e;
+    color: #d2d2d2;
+    text-align: center;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.f_containery {
+    max-width: 1170px;
+}
+
+.f_row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.f_col {
+    width: 33%;
+}
+
+.f_col h4 {
+    text-transform: capitalize;
+    font-size: 20px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.f_col h4::before {
+    background-color: red;
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    height: 3px;
+    width: 70px;
+    box-sizing: border-box;
+    border-radius: 1px;
+
+}
+
+.f_col ul li a {
+    transition: all 0.5s ease;
+    display: block;
+    padding-top: 5px;
+}
+
+.f_col ul li a:hover {
+    padding-left: 15px;
+    color: #ffffff;
+}
+
+.f_col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(194, 169, 169, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.f_col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+@media(max-width: 767px) {
+    .f_col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px) {
+    .f_col {
+        width: 100%;
+    }
+}
+
+li {
+    list-style: none;
+    position: relative;
+
+}
+
+h1 {
+    margin: 100px;
+    text-align: center;
+}
+
+h2 {
+    margin: auto;
+    text-align: center;
+
+}
+
+h3 {
+    margin: 10px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+body {
+    background-color: #d2d2d2;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #4a4a4a;
+}
+
+a {
+    text-decoration: none;
+    color: blanchedalmond;
+}
+
+li {
+    list-style: none;
+    position: relative;
+}
+
+p {
+    font-size: 22px;
+    font-family: 'Merriweather', serif;
+    text-align: justify;
+    margin: 10px 30px 20px 20px;
+}
+
+
+.container {
+    max-width: 1224px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    padding: 5%;
+
+}
+
+.nav-branding {
+    font-size: 2rem;
+}
+
+
+.nav-link {
+    font-family: 'Unbounded', cursive;
+    font-size: 20px;
+    padding: 8px 16px;
+    cursor: pointer;
+    color: white;
+}
+
+.nav-item a:hover {
+    background-color: white;
+    color: #4a4a4a;
+}
+
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background-color: antiquewhite;
+}
+
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #868aaa;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 10px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+}
+
+
+
+
+.nav-item:hover .sous-menu {
+    display: block;
+    position: absolute;
+    margin-top: 5px;
+    left: 0;
+}
+
+
+.sous-menu {
+    display: none;
+    position: absolute;
+    background-color: #4a4a4a;
+    width: 100%;
+}
+
+.sous-menu li {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    text-align: center;
+}
+
+.sous-menu li a {
+    font-size: 16px;
+    font-family: 'Unbounded', cursive;
+    color: white;
+}
+
+.sous-menu li:hover {
+    background-color: white;
+}
+
+.sous-menu li:hover .sous-menu-a {
+    color: #4a4a4a;
+}
+
+
+.Campagnes:hover .sous-sous-menu_1 {
+    display: block;
+    position: absolute;
+    left: 236px;
+    top: 0;
+}
+
+
+.sous-sous-menu_1 {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: #4a4a4a;
+}
+
+
+.sous-sous-menu_1 li {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    text-align: center;
+}
+
+.sous-sous-menu_1 li a {
+    color: white;
+    font-size: 16px;
+    font-family: 'Unbounded', cursive;
+}
+
+.sous-sous-menu_1 li:hover {
+    background-color: white;
+}
+
+.sous-sous-menu_1 li:hover a {
+    color: #4a4a4a
+}
+
+.Visions:hover .sous-sous-menu_2 {
+    display: block;
+    position: absolute;
+    left: 248px;
+    top: 0;
+}
+
+.sous-sous-menu_2 {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: #4a4a4a;
+}
+
+
+.sous-sous-menu_2 li {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    text-align: center;
+}
+
+.sous-sous-menu_2 li a {
+    color: white;
+    font-size: 16px;
+    font-family: 'Unbounded', cursive;
+}
+
+.sous-sous-menu_2 li:hover {
+    background-color: white;
+}
+
+.sous-sous-menu_2 li:hover a {
+    color: #4a4a4a
+}
+
+.Guerres:hover .sous-sous-menu_3 {
+    display: block;
+    position: absolute;
+    left: 248px;
+    top: 0;
+}
+
+.sous-sous-menu_3 {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: #4a4a4a;
+}
+
+
+.sous-sous-menu_3 li {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    text-align: center;
+}
+
+.sous-sous-menu_3 li a {
+    color: white;
+    font-size: 16px;
+    font-family: 'Unbounded', cursive;
+}
+
+.sous-sous-menu_3 li:hover {
+    background-color: white;
+}
+
+.sous-sous-menu_3 li:hover a {
+    color: #4a4a4a
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+}
+
+#op {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 100px;
+    justify-content: center;
+    background-color: aliceblue;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    color: #000070;
+}
+
+#dev {
+    margin-left: 550px;
+    color: #1f1e1e;
+    font-size: 1.2em;
+}
+
+.source {
+    color: blue;
+    text-align: center;
+    margin: 10px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+}
+
+#el:hover {
+    color: purple;
+    transition: all 0.5s ease;
+    margin-left: 10px;
+
+}
+#text_dev{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    margin: 30px 100px 30px 100px;
+    transition: all 2s ease;
+
+}
+#el {
+    transition: all 0.5s ease;
+    padding: 3px;
+    margin-top: 10px;
+    color: #4a4a4a;
+    font-size: 20px;
+}
+
+#gith {
+    color: #000070;
+    transition: 500ms ease;
+}
+
+#gith:hover {
+    font-size: 20px;
+}
+
+.inf {
+    text-align: center;
+    margin: auto;
+    max-width: 500px;
+    border-radius: 10px;
+    background-color: beige;
+    margin-bottom: 50px;
+}
+
+#FAQ {
+    margin: auto;
+}
+
+#QR{
+    margin: 100px;
+    padding: 15px;
+    border-radius: 20px;
+    margin-bottom: 100px;
+    justify-content: center;
+    background-color: rgba(250, 245, 231, 0.797);
+
+    color: #000070;
+}
+
+body::-webkit-scrollbar {
+    width: 13px; /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(249, 249, 249); /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255); /* color of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
+    border: 3px solid #6e6161; /* creates padding around scroll thumb */
+  }

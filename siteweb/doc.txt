@@ -1,0 +1,31 @@
+  <nav class="table-of-contents">
+    <!-- création d’une barre de navigation à l’intérieur de cette page vers les différentes parties de cette page web-->
+    
+    <ul>
+      <!--initialisation de la liste-->
+      <li class="tab">
+        <a href="#resume" class="tab-link">Résumé</a>
+        <!--création d’un lien vers le résumé-->
+      </li>
+      <li class="tab">
+        <a href="#pol" class="tab-link">Vision
+          politique</a>
+        <!--création d’un lien vers la partie politique de Napoléon-->
+      </li>
+      <li class="tab">
+        <a href="#eco" class="tab-link">Vision économique et
+          social</a>
+        <!--création d’un lien vers la vision économique et socia-->
+      </li>
+      <li class="tab">
+        <a href="#war" class="tab-link">guerres</a>
+        <!--création d’un lien vers la partie qui parle sur les guerres menées par Napoléon-->
+        <ul>
+          <li> <a href="#Me">>Mexique</a></li>
+          <!--création d’un lien vers la guerre du Mexique par Napoléon-->
+          <li><a href="#De">>Prusse</a></li>
+          <!--création d’un lien vers la guerre de 1870 par Napoléon-->
+        </ul>
+      </li>
+    </ul>
+  </nav>

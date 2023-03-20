@@ -1,0 +1,406 @@
+footer {
+    background-color: #1f1e1e; /*change la couleur du fond du footer */
+    color: #d2d2d2; /*change la couleur du base du texte */
+    text-align: center; /*aligne le texte au centre*/
+    padding: 40px; /* La propriété padding d'un élément ajuste la hauteur et la largeur de la boîte de remplissage (padding) de l'élément. */
+    box-sizing: border-box; /*indique au navigateur de tenir compte de toute bordure et remplissage dans les valeurs que vous spécifiez pour la largeur et la hauteur d'un élément.*/
+}
+
+.f_containery {
+    max-width: 1170px; /*la largeur maximal de ce que peut contenir le footere est de 1170px */
+}
+
+.f_row {
+    display: flex; /*l’affichage des lignes du footer se font par le type d’affichage nommé flex */
+    flex-wrap: wrap; /*indique si les éléments flexibles sont contraints à être disposés sur une seule ligne ou s'ils peuvent être affichés */
+}
+
+.f_col {
+    width: 33%; /* la largeur des colonnes est de 33% de l’espace de l’écran*/
+}
+
+.f_col h4 {
+    text-transform: capitalize; /*spécifie comment mettre en majuscule le texte d'un élément*/
+    font-size: 20px; /*ajuste la taille de la police*/
+    margin-bottom: 30px; /*crée un espace vers le bas avec les f_col et h4 entre les autres éléments*/
+    position: relative; /*définie la positions des éléments comme relative*/
+}
+
+.f_col h4::before {
+    background-color: red; /*change la couleur du fond du footer */
+    content: ""; /*crée un élément qui ne contient aucune écriture*/
+    position: absolute; /*fais que la position ne peut être changé*/
+    bottom: -10px; /*se positionne 10px vers le bas à la positions normal*/
+    height: 3px; /*définie la hauteur de l’élémonts(une sorte de ligne) à une hauteur de 3px */
+    width: 70px; /*pareil pour la largeur*/
+    box-sizing: border-box; /*indique au navigateur de tenir compte de toute bordure et remplissage dans les valeurs que vous spécifiez pour la largeur et la hauteur d'un élément.*/
+    border-radius: 1px; /*arrondie les bords de l’éléments*/
+
+}
+
+.f_col ul li a {
+    transition: all 0.5s ease; /*fournissent un moyen de contrôler la vitesse d'animation lors de la modification des propriétés CSS. Au lieu de faire en sorte que les changements de propriétés prennent effet*/
+    display: block; /*La propriété display définit le type d'affichage utilisée pour le rendu d'un élément (de bloc ou en ligne) et la disposition utilisée*/
+    padding-top: 5px; /* La propriété padding-top d'un élément ajuste la hauteur de la boîte de remplissage (padding) en haut de l'élément.*/
+}
+
+.f_col ul li a:hover { /*lorsque le curseur pointe ces éléments cette braquette fonctionne*/
+    padding-left: 15px; /* La propriété padding-left d'un élément ajuste la largeur de la boîte de remplissage (padding) à gauche de l'élément.*/   
+    color: #ffffff; /*change la couleur de la police*/
+}
+
+.f_col .social-links a {
+    display: inline-block; /*consiste à afficher les éléments de la liste horizontalement au lieu de verticalement.*/
+    height: 40px; /*définie la hauteur de l’élémonts(une sorte de ligne) à une hauteur de 40px */
+    width: 40px; /*pareil pour la largeur*/
+    background-color: rgba(194, 169, 169, 0.2); /*change la couleur du fond du footer */
+    margin: 0 10px 10px 0; /*définit la taille des marges sur les quatre côtés de l'élément*/
+    text-align: center; /*aligne le texte vers le centre du texte*/
+    line-height: 40px; /*la distance verticale entre deux lignes de caractères, mesurée entre la ligne de base d'une ligne de caractères et la ligne de base de la suivante*/
+    border-radius: 50%; /*arrondie les bords de 50%*/
+    color: #ffffff; /*change la couleur du base du texte*/
+    transition: all 0.5s ease; /*fournissent un moyen de contrôler la vitesse d'animation lors de la modification des propriétés CSS. Au lieu de faire en sorte que les changements de propriétés prennent effet*/
+}
+
+.f_col .social-links a:hover {
+    color: #24262b; /*change la couleur du texte en #24262b*/
+    background-color: #ffffff; /*change la couleur du fond d’écran en #ffffff*/
+}
+
+/*responsive*/
+@media(max-width: 767px) { /*La largeur maximale est de 767 pixels pour l'élément*/
+    .f_col {
+        width: 50%; /*On défini la largeur des éléments à 50% de leur taille originale*/
+        margin-bottom: 30px; /*La margeur du bas est définie à 30 pixels pour l'élément*/
+    }
+}
+
+@media(max-width: 574px) { /*La largeur maximale est de 574 pixels pour l'élément*/
+    .f_col {
+        width: 100%; /*On défini la largeur des éléments à 100% de leur taille originale*/
+    }
+}
+
+
+* {
+    padding: 0; /*On définie la boite autour de tous les éléments à 0*/
+    margin: 0; /*On définie la marge de tous les éléments à 0*/
+    box-sizing: border-box; /*On définie la hauteur et la largeur totale de l'élement*/
+}
+
+html {
+    scroll-behavior: smooth; /*Le comportement du scrolling de l'utilisateur est défini comme fluide*/
+
+}
+
+body {
+    background-color: #d2d2d2; /*On change la couleur de fond du body avec la couleur #d2d2d2*/
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #4a4a4a; /*On change la couleur de fond du header avec la couleur #4a4a4a*/
+}
+
+a {
+    text-decoration: none; /*Le texte n'a pas de décorations(soulignements, en gras, etc)*/
+    color: blanchedalmond; /*Tous les élements a ont comme couleur blanchedalmond*/
+}
+
+li {
+    list-style: none; /*On enlève les élements mis sur les listes par défaut*/
+    position: relative; /*La position de l'élément est définie comme relative*/
+}
+
+p {
+    font-size: 22px; /*La taille de la police est défini à 22 pixels pour les éléments des paragraphes*/
+    font-family: 'Merriweather', serif; /*On défini la police " 'Merriweather', serif " pour les éléments des paragraphes*/
+    text-align: justify; /*On justifie le texte*/
+    margin: 10px 30px 20px 20px; /*On définie des marges autour des paragraphes*/
+}
+
+
+.container { 
+    max-width: 1224px;/* La largeur maximale est de 1224 pixels*/
+    width: 90%; /*On défini la largeur des éléments de la classe "container" à 90% de leur taille originale*/
+    margin: 0 auto; /*On définie des marges autour de l'élement */
+}
+
+.navbar {
+    min-height: 70px; /*La hauteur minimale est de 70 pixels*/
+    display: flex; /*On définie le rendu de l'élément sur flex*/
+    justify-content: space-between; /*Les élements sont justifiés en laissant des espaces entre eux*/
+    align-items: center; /*Les éléments sont alignés au centre*/
+ 
+
+}
+
+.nav-menu {
+    display: flex; /*On définie le rendu de l'élément sur flex*/
+    justify-content: space-between; /*Les élements sont justifiés en laissant des espaces entre eux*/
+    align-items: center; /*Les éléments sont alignés au centre*/
+    height: 80px; /*On défini la hauteur des éléments à 80 pixels */
+    width: 100%;/*On défini la largeur des éléments à 100% de leur taille originale*/
+    padding: 5%; /*On définie la boite autour de tous les éléments à 5% de leur taille initiale*/
+
+}
+
+.nav-branding {
+    font-size: 2rem; /*La taille des éléments est définie à 2 rem*/
+}
+
+
+.nav-link {
+    font-family: 'Unbounded', cursive; /*On défini la police " 'Unbounded', cursive " pour les éléments*/
+    font-size: 20px; /*La taille de la police est défini à 20 pixels*/
+    padding: 8px 16px; /*On définie la boite autour de tous les éléments à 8 pixels en haut et 16 pixels à droite*/
+    cursor: pointer; /*Le curseur est définie comme un pointeur lors du passage de la souris sur l'élément*/
+    color: white; /*On change la couleur du texte en blanc*/
+}
+
+.nav-item a:hover {
+    background-color: white; /*On change la couleur de fond en blanc*/
+    color: #4a4a4a; /*On change la couleur du texte en #4a4a4a*/
+}
+
+
+.hamburger {
+    display: none; /*On ne définie pas de rendu de l'élément*/
+    cursor: pointer; /*Le curseur est définie comme un pointeur lors du passage de la souris sur l'élément*/
+}
+
+.bar {
+    display: block; /*On définie le rendu de l'élément comme un block*/
+    width: 25px; /*On défini la longueur à 25 pixels*/
+    height: 3px; /*On défini la hauteur à 3px*/
+    margin: 5px auto; /*On définie des marges autour de l'élement */
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; /*On utilise une transition de 0,3 seconde*/
+    background-color: antiquewhite; /*On change la couleur de fond en blanc antique*/
+}
+
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /*On définie le rendu de l'élément comme un block*/
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0; /*L'élément à une opacité de 0*/
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg); /*On effectue une translation verticale de 8 pixels et une rotation de 45 degrés*/
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg); /*On effectue une translation verticale de -8 pixels et une rotation de -45 degrés*/
+    }
+
+    .nav-menu {
+        position: fixed; /*La position de l'élément est fixée*/
+        left: -100%;
+        top: 70px; /*Le haut de l'élément est définie à 70 px*/
+        gap: 0; /*L'espace est définie à 0*/
+        flex-direction: column;
+        background-color: #868aaa; /*On change la couleur du fond en #868aaa*/
+        width: 100%; /*On défini la longueur à 100%*/
+        text-align: center; /*On aligne le texte au centre*/
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 10px 0; /*On définie des marges autour de l'élement */
+    }
+
+    .nav-menu.active {
+        left: 0; /*On définie la gauche de l'élément à 0*/
+    }
+}
+
+
+
+
+.nav-item:hover .sous-menu {
+    display: block; /*On définie le rendu de l'élément comme un block*/
+    position: absolute; /*La position de l'élément est définie comme absolue*/
+    margin-top: 5px; /*On définie des marges en haut de l'élement */
+    left: 0; /*On définie la gauche de l'élément à 0*/
+}
+
+
+.sous-menu {
+    display: none; /*On ne définie pas de rendu de l'élément*/
+    position: absolute; /*La position de l'élément est définie comme absolue*/
+    background-color: #4a4a4a; /*On change la couleur du fond en #4a4a4a*/
+    width: 100%; /*On défini la largeur à 100%*/
+}
+
+.sous-menu li {
+    padding-top: 3%; /*On ajuste la hauteur du haut de la boite de l'élément à 3%*/
+    padding-bottom: 3%; /*On ajuste la bas du haut de la boite de l'élément à 3%*/
+    text-align: center; /*On aligne le texte au centre*/
+}
+
+.sous-menu li a {
+    font-size: 16px; /*La taille des éléments est définie à 16 pixels*/
+    font-family: 'Unbounded', cursive; /*On défini la police " 'Unbounded', cursive " pour les éléments*/
+    color: white; /*On change la couleur du texte en blanc*/
+}
+
+.sous-menu li:hover {
+    background-color: white; /*On change la couleur de fond en blanc*/
+}
+
+.sous-menu li:hover .sous-menu-a {
+    color: #4a4a4a; /*On change la couleur du texte en #4a4a4a*/
+}
+
+.Campagnes:hover .sous-sous-menu_1 {
+    display: block; /*On définie le rendu de l'élément comme un block*/
+    position: absolute; /*La position de l'élément est définie comme absolue*/
+    left: 236px; /*On définie la gauche de l'élément à 236*/
+    top: 0; /*On définie le haut de l'élément à 0*/
+}
+
+
+.sous-sous-menu_1 {
+    display: none; /*On ne définie pas de rendu de l'élément*/
+    position: absolute; /*La position de l'élément est définie comme absolue*/
+    width: 100%; /*On défini la largeur à 100%*/
+    background-color: #4a4a4a; /*On change la couleur de fond en #4a4a4a*/
+}
+
+
+.sous-sous-menu_1 li {
+    padding-top: 3%; /*On ajuste la hauteur du haut de la boite de l'élément à 3%*/
+    padding-bottom: 3%; /*On ajuste la hauteur du bas de la boite de l'élément à 3%*/
+    text-align: center; /*On aligne le texte au centre*/
+}
+
+.sous-sous-menu_1 li a {
+    color: white; /*On change la couleur du texte en blanc*/
+    font-size: 16px; /*La taille des éléments est définie à 16 pixels*/
+    font-family: 'Unbounded', cursive; /*On défini la police " 'Unbounded', cursive " pour les éléments*/
+}
+
+.sous-sous-menu_1 li:hover {
+    background-color: white; /*On change la couleur de fond en blanc*/
+}
+
+.sous-sous-menu_1 li:hover a {
+    color: #4a4a4a /*On change la couleur du texte en #4a4a4a*/
+}
+
+.Visions:hover .sous-sous-menu_2 {
+    display: block; /*On définie le rendu de l'élément comme un block*/
+    position: absolute; /*La position de l'élément est définie comme absolue*/
+    left: 248px; /*On définie la gauche de l'élément à 248*/
+    top: 0; /*On définie le haut de l'élément à 0*/
+}
+
+.sous-sous-menu_2 {
+    display: none; /*On ne définie pas de rendu de l'élément*/
+    position: absolute; /*La position de l'élément est définie comme absolue*/
+    width: 100%; /*On défini la largeur à 100%*/
+    background-color: #4a4a4a; /*On change la couleur de fond en #4a4a4a*/
+}
+
+
+.sous-sous-menu_2 li {
+    padding-top: 3%; /*On ajuste la hauteur du haut de la boite de l'élément à 3%*/
+    padding-bottom: 3%; /*On ajuste la hauteur du bas de la boite de l'élément à 3%*/
+    text-align: center; /*On aligne le texte au centre*/
+}
+
+.sous-sous-menu_2 li a {
+    color: white; /*On change la couleur du texte en blanc*/
+    font-size: 16px; /*La taille des éléments est définie à 16 pixels*/
+    font-family: 'Unbounded', cursive; /*On défini la police " 'Unbounded', cursive " pour les éléments*/
+}
+
+.sous-sous-menu_2 li:hover {
+    background-color: white; /*On change la couleur de fond en blanc*/
+}
+
+.sous-sous-menu_2 li:hover a {
+    color: #4a4a4a /*On change la couleur du texte en #4a4a4a*/
+}
+
+.Guerres:hover .sous-sous-menu_3 {
+    display: block; /*On définie le rendu de l'élément comme un block*/
+    position: absolute; /*La position de l'élément est définie comme absolue*/
+    left: 248px; /*On définie la gauche de l'élément à 248*/
+    top: 0; /*On définie le haut de l'élément à 0*/
+}
+
+.sous-sous-menu_3 {
+    display: none; /*On ne définie pas de rendu de l'élément*/
+    position: absolute; /*La position de l'élément est définie comme absolue*/
+    width: 100%; /*On défini la longueur à 100%*/
+    background-color: #4a4a4a; /*On change la couleur du fond en #4a4a4a*/
+}
+
+
+.sous-sous-menu_3 li {
+    padding-top: 3%; /*On ajuste la hauteur du haut de la boite de l'élément à 3%*/
+    padding-bottom: 3%; /*On ajuste la hauteur du bas de la boite de l'élément à 3%*/
+    text-align: center; /*On aligne le texte au centre*/
+}
+
+.sous-sous-menu_3 li a {
+    color: white; /*On change la couleur du texte en blanc*/
+    font-size: 16px; /*La taille des éléments est définie à 16 pixels*/
+    font-family: 'Unbounded', cursive; /*On défini la police " 'Unbounded', cursive " pour les éléments*/
+}
+
+.sous-sous-menu_3 li:hover {
+    background-color: white; /*On change la couleur de fond en blanc*/
+}
+
+.sous-sous-menu_3 li:hover a {
+    color: #4a4a4a /*On change la couleur du texte en #4a4a4a*/
+}
+
+#logo {
+    width: 50px; /*On définie la largeur du logo à 50px*/
+    height: 50px; /*On définie la longueur du logo à 50px*/
+} 
+
+#Titre {
+    color: rgb(3, 3, 95); /*On change la couleur du texte en rgb(3, 3, 95)*/
+    text-align: center; /*On aligne le texte au centre*/
+    font-size: 65px; /*La taille des éléments est définie à 65 pixels*/
+    font-family: 'Unbounded', cursive; /*On défini la police " 'Unbounded', cursive " pour les éléments*/
+    margin-top: 30px; /*On défini la marge du haut à 30px*/
+}
+
+#Napoléon2 {
+    float: right; /*On met l'élément sur la droite*/
+    display: block; /*On définie le rendu de l'élément comme un block*/
+    width: 33%; /*On définie la largeur du logo à 50px*/
+    margin: 30px 10px 10px 30px; /*On définie la marge de l'élément à 30 pixels en haut, 10 pixels à droite, 10 pixels en bas et 30 pixels à gauche*/
+    border-radius: 15px; /*On définie les coins arrondies de l'élément à 15px*/
+    box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.863); /*On définie la couleur de l'ombre de l'élement*/
+}
+
+.test {
+    margin-bottom: 100px; /*La marge du bas de l'élément est définie à 100px*/
+}
+
+body::-webkit-scrollbar {
+    width: 13px; /* la largeur de l’entièreté de la barre */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(249, 249, 249); /*couleur du trackeur */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255); /* couleur du bouton de scroll */
+    border-radius: 20px; /* arrondie le bouton de scroll */
+    border: 3px solid #6e6161; /* crée un padding autor du bouton et ajoute une couleur à celle ci */
+  }
